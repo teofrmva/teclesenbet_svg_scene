@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teodros - Midnight Mountain SVG Scene</title>
+</head>
+
+<body style="background-color: #111827; color: #ffffff; font-family: Arial, sans-serif; text-align: center;">
+
+  <!-- This heading names my SVG scene so visitors know what the page shows. -->
+  <h1>Midnight Mountain Scene</h1>
+
+  <!-- This SVG draws my scene using shapes instead of an image file.
+       The viewBox sets the drawing area, and the title helps screen readers. -->
+  <svg viewBox="0 0 500 400" width="500" height="400"
+       style="max-width: 100%; height: auto;"
+       role="img" aria-labelledby="scene-title"
+       xmlns="http://www.w3.org/2000/svg">
+
+    <title id="scene-title">A moonlit mountain landscape with stars and trees</title>
+
+    <!-- This rectangle creates the dark night sky. -->
+    <rect x="0" y="0" width="500" height="400" fill="#172554" />
+
+    <!-- This circle creates the moon with a visible outline. -->
+    <circle cx="390" cy="85" r="43"
+            fill="#fde68a" stroke="#ffffff" stroke-width="3" />
+
+    <!-- This group gives all the stars the same yellow color. -->
+    <g fill="#fef08a">
+      <circle cx="65" cy="65" r="4" />
+      <circle cx="150" cy="105" r="3" />
+      <circle cx="260" cy="55" r="4" />
+      <circle cx="320" cy="145" r="3" />
+      <circle cx="455" cy="180" r="4" />
+    </g>
+
+    <!-- These polygons create three mountains. -->
+    <g stroke="#0f172a" stroke-width="3">
+      <polygon points="0,300 130,105 260,300" fill="#64748b" />
+      <polygon points="160,300 300,120 440,300" fill="#475569" />
+      <polygon points="300,300 420,160 500,300" fill="#334155" />
+    </g>
+
+    <!-- These smaller polygons create snowy mountain peaks. -->
+    <g fill="#f8fafc">
+      <polygon points="130,105 94,160 130,148 163,155" />
+      <polygon points="300,120 260,172 300,158 339,170" />
+    </g>
+
+    <!-- This rectangle creates the ground below the mountains. -->
+    <rect x="0" y="300" width="500" height="100" fill="#14532d" />
+
+    <!-- These lines and triangles create pine trees. -->
+    <g stroke="#052e16" stroke-width="5">
+      <line x1="75" y1="290" x2="75" y2="355" />
+      <line x1="425" y1="290" x2="425" y2="355" />
+    </g>
+
+    <g fill="#166534" stroke="#052e16" stroke-width="2">
+      <polygon points="75,235 35,315 115,315" />
+      <polygon points="425,235 385,315 465,315" />
+    </g>
+
+    <!-- This ellipse creates a small lake in the foreground. -->
+    <ellipse cx="250" cy="350" rx="105" ry="24"
+             fill="#38bdf8" stroke="#bae6fd" stroke-width="3" />
+
+    <!-- This polyline creates a zigzag reflection on the lake. -->
+    <polyline points="210,350 230,344 250,350 270,344 290,350"
+              fill="none" stroke="#ffffff" stroke-width="3" />
+
+    <!-- This text labels the scene inside the SVG. -->
+    <text x="250" y="385" text-anchor="middle"
+          font-family="Arial, sans-serif" font-size="18"
+          font-weight="bold" fill="#ffffff">
+      MIDNIGHT MOUNTAINS
+    </text>
+
+  </svg>
+
+  <!-- This paragraph explains the shapes used to create the scene. -->
+  <p>My SVG scene shows a peaceful mountain landscape at night. I used rectangles for the sky and ground, circles for the moon and stars, and polygons for the mountains and trees. I also used lines for the tree trunks, an ellipse for the lake, and a polyline for the reflection in the water. The dark colors make the scene feel like nighttime, while the bright moon and stars add contrast.</p>
+
+<!-- This reflection explains my design choices and what I learned. -->
+<p><strong>Reflection:</strong> Creating my Midnight Mountain Scene helped me understand how SVG shapes work together to make a picture. The hardest shape to position was the polygon because I had to figure out the correct points to make the mountains look realistic. I learned that changing the numbers can move the shapes or change their sizes. For my first color combination, I tried a lighter blue sky with bright green mountains, but the colors did not match the nighttime theme I wanted. I decided to use darker blues and grays to make the scene look better. My favorite part was adding the moon and stars because they made the picture feel more complete. Outside of class, I have seen similar mountain designs used in website logos, outdoor clothing brands, and travel websites. This assignment helped me understand how SVG can create designs without needing regular image files.</p>
+
+</body>
+</html>
